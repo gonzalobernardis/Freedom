@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -53,66 +54,3 @@
 
 </body>
 </html>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex; 
-    align-items: center; 
-}
-h1{
-    padding-right: 5%;
-}
-header {
-    padding: 20px 0;
-    background-color: #26ade4; 
-    color: #000000;
-}
-.formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.comment{
-    margin-top: 1em
-}
-.boton{
-    margin-top: 1em
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-
-}
-
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffffff;
-}
-footer {
-    text-align: center;
-    background-color: #26ade4; 
-    color: #000000; 
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-</style>
