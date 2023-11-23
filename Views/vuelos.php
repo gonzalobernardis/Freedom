@@ -13,11 +13,11 @@
             <h1>Freedom</h1>
             <nav>
                 <ul>
-                    <li><a href="views/COMENTARIOS.php">Comentarios</a></li>
-                    <li><a href="views/REGISTRO.php">Registro</a></li>
-                    <li><a href="views/RESERVA.php">Reserva</a></li>
-                    <li><a href="views/SUGERENCIASVUELOS.php">Sugerencias de Vuelos</a></li>
-                    <li><a href="views/VUELOS.php">Vuelos</a></li>
+                    <li><a href="comentarios.php">Comentarios</a></li>
+                    <li><a href="registro.php">Registro</a></li>
+                    <li><a href="reserva.php">Reserva</a></li>
+                    <li><a href="sugerenciasVuelos.php">Sugerencias de Vuelos</a></li>
+                    <li><a href="vuelos.php">Vuelos</a></li>
                 </ul>
             </nav>
         </div>
