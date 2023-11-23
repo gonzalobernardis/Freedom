@@ -124,3 +124,60 @@ main {
         width: 100%;
     }
 }
+
+
+
+
+
+
+/* mainreserva */
+.img-fondreserva{
+    width: 900px;
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .img-fondreserva img{
+    width: 100%;
+    
+  }
+  
+  
+  .main-reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .form-reserva{
+    padding-bottom: 20px;
+  }
+  
+  .img-hoteles{
+    margin-bottom: 25px;
+  }
+  
+  
+   /* Estilos básicos para el calendario */
+   table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+      }
+  
+      td:hover {
+        background-color: #e6e6e6;
+      }
