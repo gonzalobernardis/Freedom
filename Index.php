@@ -1,5 +1,5 @@
 <?php
-include 'C:\xampp\htdocs\mvc-clase2\Controller\controlador.php';
+include 'C:\xampp\htdocs\parcial2\Freedom\Controller\controlador.php';
 
 $model = new TaskModel();
 $view = new TaskView();
