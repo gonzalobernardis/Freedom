@@ -18,7 +18,6 @@
                     <li><a href="../Index.php">Inicio</a></li>
                     <li><a href="comentarios.php">Comentarios</a></li>
                     <li><a href="registro.php">Registro</a></li>
-                    <li><a href="reserva.php">Reservá</a></li>
                     <li><a href="sugerenciasVuelos.php">Sugerencias de Vuelos</a></li>
                     <li><a href="vuelos.php">Tus Vuelos</a></li>
                 </ul>
