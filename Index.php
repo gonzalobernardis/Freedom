@@ -1,4 +1,8 @@
 
+<?php
+include 'C:\xampp\htdocs\mvc-clase2\Freedom\Controller\controlador.php';
+?>
+
 </main>
     <footer>
         <div class="containerFooter">
@@ -9,3 +13,4 @@
 </html>
 </body>
 </html>
+

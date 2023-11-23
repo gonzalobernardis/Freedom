@@ -1,9 +1,8 @@
 <?php
-
 include 'C:\xampp\htdocs\parcial2\Freedom\Models\modelo.php';
 
 include 'C:\xampp\htdocs\vuelos\Freedom\Models\modelo.php';
-
+include 'C:\xampp\htdocs\mvc-clase2\Freedom\Models\modelo.php';
 class TaskController {
     private $model;
     private $view;
@@ -26,6 +25,5 @@ class TaskController {
 
 include 'C:\xampp\htdocs\parcial2\Freedom\Views\vuelos.php';
 include 'C:\xampp\htdocs\vuelos\Freedom\Views\vuelos.php';
-
-
+include 'C:\xampp\htdocs\mvc-clase2\Freedom\Views\vuelos.php';
 ?>
