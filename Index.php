@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
-include 'C:\xampp\htdocs\parcPortal\Freedom\Controller\controlador.php';
-=======
-include 'C:\xampp\htdocs\parcial2\Freedom\Controller\controlador.php';
->>>>>>> 20ac1bc1b5e4bf95a6864828e4958412ad532bd0
+include 'C:\xampp\htdocs\mvc-clase2\Freedom\Controller\controlador.php';
 
 $model = new TaskModel();
 $view = new TaskView();
