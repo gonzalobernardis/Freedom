@@ -150,16 +150,301 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+    
     
   }
   
   .form-reserva{
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+  .fecha-reserva{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: 0.5px solid black;
+    border-radius: 10PX;
+    border-radius: black;
+
+  }
+
+  .fecha-reserva-button{
+    width: 100px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 10PX;
+    background-color: #26ade4;
+  }
+
+  
   
   .img-hoteles{
     margin-bottom: 25px;
   }
+
+  .containerFooter-reserva {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: #26ade4;
+    color: #000000;
+    padding: 20px 0;
+
+}
+
+.containerFooter-reserva {
+    margin: 0;
+    font-size: 14px;
+}
+
+  .instagram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.instagram img
+{
+    width: 20px;
+}
+
+.facebook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.facebook img
+{
+    width: 20px;
+}
+
+.iconos-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ESTILOS RESERVA DATSO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .body-reserva-viaje {
+    background-image: url('Views/views/fond.jpg');
+  }
+  
+  .form-register {
+    width: 400px;
+    background: #26ade4;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(10, 10, 10);
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(7, 7, 7);
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  
+  .form-register p a {
+    color: red;
+  }
+
+
+.equipaje-main{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.equipaje{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.equipaje-otros{
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;  
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+/* Estilos form pago */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container-formpago{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #26ade4 60%, #26ade4 40.1%);
+}
+
+.container-formpago form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container-formpago form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container-formpago form .row .col{
+  flex:1 1 250px;
+}
+
+.container-formpago form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container-formpago form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container-formpago form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container-formpago form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container-formpago form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container-formpago form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container-formpago form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container-formpago form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container-formpago form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #1f53c5;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container-formpago form .submit-btn:hover{
+  background: #26ade4;
+}
+
+.container-formpago form p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
   
   
    /* Estilos básicos para el calendario */
@@ -181,3 +466,9 @@ main {
       td:hover {
         background-color: #e6e6e6;
       }
+
+      .div-form-reserva
+      {
+        font-size: 25px;
+      }
+
