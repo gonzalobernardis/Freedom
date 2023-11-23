@@ -1,5 +1,5 @@
 <?php
-include 'C:\xampp\htdocs\vuelos\Freedom\Controller\controlador.php';
+include 'C:\xampp\htdocs\mvc-clase2\Controller\controlador.php';
 
 $model = new TaskModel();
 $view = new TaskView();
@@ -14,3 +14,13 @@ $controller->addTask("Comprar chocolate");
 $controller->showTasks();
 
 ?>
+    </main>
+    <footer>
+        <div class="containerFooter">
+            <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+</body>
+</html>
