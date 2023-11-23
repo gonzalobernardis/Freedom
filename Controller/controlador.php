@@ -1,5 +1,5 @@
 <?php
-include 'C:\xampp\htdocs\mvc-clase2\Models\modelo.php';
+include 'C:\xampp\htdocs\vuelos\Freedom\Models\modelo.php';
 class TaskController {
     private $model;
     private $view;
@@ -19,6 +19,6 @@ class TaskController {
         $this -> view -> render ($tasks);
     }
 }
-include 'C:\xampp\htdocs\mvc-clase2\Views\vista.php';
+include 'C:\xampp\htdocs\vuelos\Freedom\Views\vuelos.php';
 
 ?>
