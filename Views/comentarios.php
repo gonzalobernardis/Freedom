@@ -8,46 +8,50 @@
 </head>
 <body>
 <header>
-        <div class="container">
-        <img src="views/logo.png" alt="Logo" height="50" width="50" style="margin-right: 10px;">
+        <div class="containerIndex">
+            <img src="logo.png" alt="Logo" height="50" width="50" style="margin-right: 10px;">
             <h1>Freedom</h1>
             <nav>
                 <ul>
-                    <li><a href="views/COMENTARIOS.php">Comentarios</a></li>
-                    <li><a href="views/REGISTRO.php">Registro</a></li>
-                    <li><a href="views/RESERVA.php">Reserva</a></li>
-                    <li><a href="views/SUGERENCIASVUELOS.php">Sugerencias de Vuelos</a></li>
-                    <li><a href="views/VUELOS.php">Vuelos</a></li>
+                    <li><a href="../Index.php">Inicio</a></li>
+                    <li><a href="comentarios.php">Comentarios</a></li>
+                    <li><a href="registro.php">Registro</a></li>
+                    <li><a href="reserva.php">Reservá</a></li>
+                    <li><a href="sugerenciasVuelos.php">Sugerencias de Vuelos</a></li>
+                    <li><a href="vuelos.php">Tus Vuelos</a></li>
                 </ul>
             </nav>
         </div>
 </header>
-<main>
-<form method="post" action="" class="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
+<main class="maincomment">
+    <div class="caja">
+        <form method="post" action="" class="formulario">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
 
-        <label for="comentario" class="comment">Comentario:</label>
-        <textarea name="comentario"></textarea>
+            <label for="comentario" class="comment">Comentario:</label>
+            <textarea name="comentario" class="input-comment" placeholder="Deja tu comentario" maxlength="500"></textarea>
 
-        <button type="submit" class="boton">Agregar Comentario</button>
-</form>
+            <button type="submit" class="boton">Agregar Comentario</button>
+        </form>
 
 
-<h1>Comentarios</h1>
-    <div id="comentarios">
-        <?php
-        foreach ($comentarios as $comentario) {
-            echo "<p>{$comentario['nombre']}: {$comentario['comentario']}</p>";
-        }
-        ?>o
+        <h1>Comentarios</h1>
+        <div id="comentarios">
+            <?php
+            foreach ($comentarios as $comentario) {
+                echo "<p>{$comentario['nombre']}: {$comentario['comentario']}</p>";
+            }
+            ?>
+        </div>
     </div>
+
 
 
 
 </main>
 <footer>
-        <div class="container">
+        <div class="containerFooter">
             <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
         </div>
 </footer>

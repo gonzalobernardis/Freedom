@@ -67,15 +67,12 @@ nav a {
 /*Codigo CSS del Footer*/
 .containerFooter {
     text-align: center;
+    font-size: 14px;
     background-color: #26ade4;
     color: #000000;
     padding: 20px 0;
 }
 
-.containerFooter {
-    margin: 0;
-    font-size: 14px;
-}
 
 /* Codigo CSS de SugerenciasVuelos.php */
 main {
@@ -125,9 +122,15 @@ main {
     }
 }
 
+.maincomment{
+    padding-top: 5em;
+    height: 35em;
 
-
-
+}
+.mainregistro{
+    padding-top: 5em;
+    height: 30em;
+}
 
 
 /* mainreserva */
@@ -182,14 +185,34 @@ main {
         background-color: #e6e6e6;
       }
 
-.formulario{
+/* Estilos básicos para el Formulario*/
+.caja{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width:30em;
+	padding:16px;
+	border-radius:10px;
+	background-color:#a8a8a8;
+
 }
 .comment{
-    margin-top: 1em
+    margin-top: 1em;	
+    width:72px;
+	font-weight:bold;
+	display:inline-block;
 }
+
+.input-comment{
+    height: 10em;
+}
+
 .boton{
     margin-top: 1em
 }
+
