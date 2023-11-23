@@ -24,24 +24,41 @@
         </div>
 </header>
 <main class="mainregistro">
-    <div class="caja">
-        <form method="post" action="" class="formulario">
-            <label for="nombre" class="comment">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Escribe tu nombre">
-
-            <label for="apellido" class="comment">Apellido:</label>
-            <input name="apellido" class="" placeholder="Escribe tu apellido" maxlength="20">
-
-            <label for="documento" class="comment">Documento:</label>
-            <input type="number" name="documento" placeholder="Escribe tu documento">
-
-            <label for="email" class="comment">Email:</label>
-            <input type="text" name="email" placeholder="Escribe tu email">
-
-            <label for="telefono" class="comment">Telefono:</label>
-            <input type="number" name=" telefono" placeholder="Escribe tu numero de telefono">
-            <button type="submit" class="boton">Enviar</button>
+    <div class="caja-registro">
+        <h1 class="titulo">Registrarse</h1>
+        <form class="formRegistrar" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellidos">Apellido:</label>
+            <input type="text" id="apellidos" name="apellidos">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion">
+            <label for="fechanacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechanacimiento" name="fechanacimiento">
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Chile">Chile</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+            </select>
+            <input type="submit" class="botonreg" value="Registrarse">
         </form>
+    </div>
+  
 
 </main>
 <footer>
@@ -52,38 +69,4 @@
     <title>Freedom - Registrarse</title>
     <link rel="stylesheet" href="../Styles.css">
 </head>
-<body>
-    <h1>Registrarse</h1>
-    <form class="formRegistrar" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="apellidos">Apellido:</label>
-        <input type="text" id="apellidos" name="apellidos">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
-        <label for="direccion">Direccion:</label>
-        <input type="text" id="direccion" name="direccion">
-        <label for="fechanacimiento">Fecha de nacimiento:</label>
-        <input type="date" id="fechanacimiento" name="fechanacimiento">
-        <label for="telefono">Telefono:</label>
-        <input type="tel" id="telefono" name="telefono">
-        <label for="nacionalidad">Nacionalidad:</label>
-        <select name="nacionalidad" id="nacionalidad">
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Uruguay">Uruguay</option>
-            <option value="Chile">Chile</option>
-            <option value="Paraguay">Paraguay</option>
-            <option value="Perú">Perú</option>
-            <option value="Venezuela">Venezuela</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Ecuador">Ecuador</option>
-        </select>
-        <input type="submit" value="Registrarse">
-    </form>
-</body>
 </html>

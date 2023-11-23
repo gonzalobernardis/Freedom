@@ -509,30 +509,34 @@ td:hover {
     background-color: #e6e6e6;
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+.caja-comment{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
 }
-.formulario{
-    display: flex;
-    flex-direction: column;
-    width:30em;
-	padding:16px;
-	border-radius:10px;
-	background-color:#a8a8a8;
 
+.formulario-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+	padding:16px;
+  border-radius:10px;
+	background-color:#a8a8a8;
+  margin-bottom: 5em;
 }
 .comment{
-    margin-top: 1em;	
-    width:72px;
-	font-weight:bold;
+  margin-top: 1em;
+  font-weight:bold;
 	display:inline-block;
 }
-
+.input-nombre{
+  width: 30em;
+}
 .input-comment{
-    height: 10em;
+  width: 30em;	
+  height: 10em;
 }
 
 .boton{
@@ -575,9 +579,41 @@ th {
 }
 
 /* Codigo CSS de registro */
-
+.mainregistro{
+padding-bottom: 50em;
+}
+.titulo{
+  margin-bottom: 1em;
+}
+.caja-registro{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 .formRegistrar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+	padding:16px;
+  border-radius:10px;
+	background-color:#a8a8a8;
+  margin-bottom: 5em;
+}
+.formRegistrar input{
+  width: 25em;	
+}
+.formRegistrar label{
+  
+  margin-top: 1em;
+  font-weight:bold;
+	display:inline-block;
+}
+.formRegistrar select{
+  width: 25em;
+}
+
+.botonreg{
+  margin-top: 1em
 }

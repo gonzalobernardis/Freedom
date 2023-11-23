@@ -13,22 +13,22 @@
 
 </head>
 <body>
-
 <header>
-    <div class="container">
-    <img src="views/logo.jpeg" alt="Logo" height="50" width="50" style="margin-right: 10px;">
-        <h1>Freedom</h1>
-        <nav>
-            <ul>
-                <li><a href="views/COMENTARIOS.php">Comentarios</a></li>
-                <li><a href="views/REGISTRO.php">Registro</a></li>
-                <li><a href="views/RESERVA.php">Reserva</a></li>
-                <li><a href="views/SUGERENCIASVUELOS.php">Sugerencias de Vuelos</a></li>
-                <li><a href="views/VUELOS.php">Vuelos</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="containerIndex">
+            <img src="logo.png" alt="Logo" height="50" width="50" style="margin-right: 10px;">
+            <h1>Freedom</h1>
+            <nav>
+                <ul>
+                    <li><a href="../Index.php">Inicio</a></li>
+                    <li><a href="comentarios.php">Comentarios</a></li>
+                    <li><a href="registro.php">Registro</a></li>
+                    <li><a href="reserva.php">Reservá</a></li>
+                    <li><a href="sugerenciasVuelos.php">Sugerencias de Vuelos</a></li>
+                    <li><a href="vuelos.php">Tus Vuelos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     
 <?php
@@ -149,7 +149,7 @@
     </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="containerFooter">
             <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
         </div>
     </footer>
