@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; 
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -50,7 +50,7 @@ nav a {
 
     h1 {
         padding-right: 0;
-        text-align: center; 
+        text-align: center;
     }
 
     nav ul {
@@ -64,6 +64,7 @@ nav a {
         margin-bottom: 10px;
     }
 }
+
 /*Codigo CSS del Footer*/
 .containerFooter {
     text-align: center;
@@ -83,7 +84,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #d1e751c5 ;
+    background-color: #d1e751c5;
 }
 
 .suggestion {
@@ -125,31 +126,27 @@ main {
     }
 }
 
-
-
-
-
-
 /* mainreserva */
-.img-fondreserva{
+.img-fondreserva {
     width: 900px;
     height: 400px;
     margin-top: 15px;
     margin-bottom: 15px;
-    
-  }
-  
-  .img-fondreserva img{
+
+}
+
+.img-fondreserva img {
     width: 100%;
-    
-  }
-  
-  
-  .main-reserva{
+
+}
+
+
+.main-reserva {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-color: white;
     font-weight: bold;
     font-size: 16px;
@@ -472,3 +469,86 @@ main {
         font-size: 25px;
       }
 
+=======
+
+}
+
+.form-reserva {
+    padding-bottom: 20px;
+}
+
+.img-hoteles {
+    margin-bottom: 25px;
+}
+
+
+/* Estilos básicos para el calendario */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td:hover {
+    background-color: #e6e6e6;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment {
+    margin-top: 1em
+}
+
+.boton {
+    margin-top: 1em
+}
+
+/* Estilos Vuelos */
+.containerT {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabV {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Codigo CSS de registro */
+
+.formRegistrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+>>>>>>> 0f0a767d12632dd6b4544a3539efdb0ad34825cc
