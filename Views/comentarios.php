@@ -26,7 +26,7 @@
 <main class="maincomment">
     <div class="caja-comment">
         <form method="post" action="comentario.php" class="formulario-comment">
-            <label for="nombre" class="comment">Nombre:</label>
+            <label for="nombre" class="comment" >Nombre:</label>
             <input type="text" class="input-nombre" name="nombre" placeholder="Escribe tu nombre">
 
             <label for="comentario" class="comment">Comentario:</label>
