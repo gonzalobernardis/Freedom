@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 <body>
 <header>
@@ -25,15 +25,15 @@
 <main >
 <div class="caja-comment">
         <h1>Registrarse</h1>
-        <form class="form-register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+        <form class="form-register" action="registro.php" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" class="controls" required>
             <label for="apellidos">Apellido:</label>
             <input type="text" id="apellidos" name="apellidos" class="controls">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="controls"required>
+            <input type="email" id="email" name="email" class="controls" required>
             <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" class="controls"required>
+            <input type="password" id="password" name="password" class="controls" required>
             <label for="fechanacimiento">Fecha de nacimiento:</label>
             <input type="date" id="fechanacimiento" name="fechanacimiento"class="controls">
             <label for="telefono">Telefono:</label>
@@ -47,7 +47,23 @@
             <input type="submit" class="botons" value="Registrarse">
         </form>
     </div>
-  
+    <?php
+    $conexion = mysqli_connect("127.0.0.1", "root", "", "serviciodevuelos") or
+        die("Problemas con la conexión");
+         if (isset($_REQUEST["aerolinea"])){  
+
+              mysqli_query($conexion, "insert into registro(nombre,apellido,email,usuario,contraseña,direccion,fechadenacimiento,telefono,nacionalidad) values 
+                            ('$_REQUEST[nombre]','$_REQUEST[apellido]','$_REQUEST[email]','$_REQUEST[usuario]','$_REQUEST[contraseña]','$_REQUEST[direccion]','$_REQUEST[fechadenacimiento]','$_REQUEST[telefono]','$_REQUEST[nacionalidad]')")
+          or die("Problemas en el select" . mysqli_error($conexion));
+         }
+        $registros = mysqli_query($conexion, "select * from registro ") or
+       die("Problemas en el select:" . mysqli_error($conexion));
+    
+    
+
+    mysqli_close($conexion);
+
+?>
 
 </main>
 <footer>

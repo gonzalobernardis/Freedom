@@ -24,24 +24,16 @@
 </header>
 <main >
     <div class="caja-comment">
-
-        <form method="post" action="comentario.php" class="form-register">
+        <form method="post" action="comentarios.php" class="form-register">
             <label for="nombre" >Nombre:</label>
-            <input type="text" name="nombre"class="controls" placeholder="Escribe tu nombre">
+            <input type="text" class="controls"  name="nombre" placeholder="Escribe tu nombre">
 
-
-
-
-            <label for="comentario">Comentario:</label>
-            <textarea name="comentario" class="controls" placeholder="Deja tu comentario" maxlength="200"></textarea>
+            <label for="comentario" >Comentario:</label>
+            <textarea name="comentario" class="controls"  placeholder="Deja tu comentario" maxlength="500"></textarea>
 
             <button type="submit" class="botons">Agregar Comentario</button>
         </form>
-
-
-
     </div>
-
 
 <div class="form-register">
     <h1 >Comentarios</h1>
@@ -49,11 +41,11 @@
     $conexion = mysqli_connect("127.0.0.1", "root", "", "serviciodevuelos") or
         die("Problemas con la conexión");
 
-        if (isset($_REQUEST["comentario"])){
+
     mysqli_query($conexion, "insert into comentarios(nombre, comentario) values 
                        ('$_REQUEST[nombre]','$_REQUEST[comentario]')")
         or die("Problemas en el select" . mysqli_error($conexion));
-        }
+        
         $registros = mysqli_query($conexion, "select * from comentarios ") or
        die("Problemas en el select:" . mysqli_error($conexion));
     
@@ -67,10 +59,12 @@
 
     mysqli_close($conexion);
 
-    ?>
+?>
 
 </div>
+
 </main>
+
 <footer>
         <div class="containerFooter">
             <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
