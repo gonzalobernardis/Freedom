@@ -33,19 +33,11 @@
     <h4>Seleccione su Vuelo</h4>
     <label for="fecha" >¿Vuelos desde Bs As A donde Quieres Ir? </label><br> <br>
     <select  name="destino" class="controls" required>
-     <option value="new">New York</option>
-     <option value="rio">Rio de Janeriro</option>
-     <option value="madrid">Madrid</option>
-     <option value="miami">Miami</option>
      <option value="bariloche">San Carlos de Bariloche</option>
      <option value="jujuy">Jujuy</option>
-     <option value="cancun">Cancun</option>
-     <option value="punta">Punta Cana</option>
      <option value="mendoza">Mendoza</option>
-     <option value="barcelona">Barcelona</option>
      <option value="cordoba">Cordoba</option>
      <option value="salta">Salta</option>
-     <option value="roma">Roma</option>
     </select>  
     <!-- <input class="controls" type="text" name="origen" id="origen" placeholder="(Bue) Buenos Aires, Argentina">
     <input class="controls" type="text" name="destino" id="destino" placeholder="MDZ Mendoza, Argentina"> -->

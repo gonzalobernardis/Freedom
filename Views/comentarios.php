@@ -22,23 +22,24 @@
             </nav>
         </div>
 </header>
-<main class="maincomment">
+<main >
     <div class="caja-comment">
-        <form method="post" action="comentario.php" class="formulario-comment">
-            <label for="nombre" class="comment">Nombre:</label>
-            <input type="text" class="input-nombre" name="nombre" placeholder="Escribe tu nombre">
+        <form method="post" action="comentario.php" class="form-register">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" name="nombre"class="controls" placeholder="Escribe tu nombre">
 
-            <label for="comentario" class="comment">Comentario:</label>
-            <textarea name="comentario" class="input-comment" placeholder="Deja tu comentario" maxlength="500"></textarea>
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" class="controls" placeholder="Deja tu comentario" maxlength="200"></textarea>
 
-            <button type="submit" class="boton">Agregar Comentario</button>
+            <button type="submit" class="botons">Agregar Comentario</button>
         </form>
 
 
 
     </div>
-    </main>
-<div class="maincomment coment">
+
+
+<div class="form-register">
     <h1 >Comentarios</h1>
 <?php
     $conexion = mysqli_connect("127.0.0.1", "root", "", "serviciodevuelos") or
@@ -65,7 +66,7 @@
     ?>
 
 </div>
-
+</main>
 <footer>
         <div class="containerFooter">
             <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
