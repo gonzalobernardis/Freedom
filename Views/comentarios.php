@@ -24,9 +24,13 @@
 </header>
 <main >
     <div class="caja-comment">
+
         <form method="post" action="comentario.php" class="form-register">
             <label for="nombre" >Nombre:</label>
             <input type="text" name="nombre"class="controls" placeholder="Escribe tu nombre">
+
+
+
 
             <label for="comentario">Comentario:</label>
             <textarea name="comentario" class="controls" placeholder="Deja tu comentario" maxlength="200"></textarea>
