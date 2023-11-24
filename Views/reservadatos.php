@@ -21,18 +21,18 @@
                     <li><a href="../Index.php">Inicio</a></li>
                     <li><a href="comentarios.php">Comentarios</a></li>
                     <li><a href="registro.php">Registro</a></li>
-                    <li><a href="reserva.php">Reservá</a></li>
                     <li><a href="sugerenciasVuelos.php">Sugerencias de Vuelos</a></li>
                     <li><a href="vuelos.php">Tus Vuelos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <main>
 <form action="vuelos.php">
 <section class="form-register">
     <h4>Seleccione su Vuelo</h4>
     <label for="fecha" >¿Vuelos desde Bs As A donde Quieres Ir? </label><br> <br>
-    <select  name="destino" class="controls" >
+    <select  name="destino" class="controls" required>
      <option value="new">New York</option>
      <option value="rio">Rio de Janeriro</option>
      <option value="madrid">Madrid</option>
@@ -49,37 +49,27 @@
     </select>  
     <!-- <input class="controls" type="text" name="origen" id="origen" placeholder="(Bue) Buenos Aires, Argentina">
     <input class="controls" type="text" name="destino" id="destino" placeholder="MDZ Mendoza, Argentina"> -->
-    <input class="controls" type="date" name="ida" id="fecha" placeholder="DD/MM/MMMM  Ida">
-    <input class="controls" type="date" name="vuelta" id="Fecha" placeholder="DD/MM/MMMM Vueta">
-    <select  name="aerolinea" class="controls" style="margin-right: 10px;">
+    <input class="controls" type="date" name="ida" id="fecha" placeholder="DD/MM/MMMM  Ida"required>
+    <input class="controls" type="date" name="vuelta" id="Fecha" placeholder="DD/MM/MMMM Vueta"required>
+    <select  name="aerolinea" class="controls" style="margin-right: 10px;" required>
         <option value="aerolinea">Aerolineas Argentina</option>
         <option value="flybondi">Flybondi</option>
         <option value="latam">Latam</option>
         <option value="jet">Jet Smart</option>
-    <input class="controls" type="number" name="cantpasajeros" id="pasajero" placeholder="Cantidad de pasajeros">
-      <input class="controls" type="number" id="cantidad" name="dias" placeholder="Cantidad de Dias" data-input style="margin-right: 25px;"> 
+    <input class="controls" type="number" name="cantpasajeros" id="pasajero" placeholder="Cantidad de pasajeros"required>
+      <input class="controls" type="number" id="cantidad" name="dias" placeholder="Cantidad de Dias" data-input style="margin-right: 25px;"required> 
       <button class="botons">RESERVAR</button> 
     </form> 
     <br>
-    <p>Tu vuelo de ida sale de<a href="https://maps.app.goo.gl/KRuV19EjMSAtuAp86" class="direccion">Aeroparque Internacional Jorge Newbery</a></p> <br>
-    <!-- <input class="botons" type="submit" value="Calcular Precio de Vuelo"> -->
+    <p>Tu vuelo de ida sale de <a href="https://maps.app.goo.gl/KRuV19EjMSAtuAp86" class="direccion">Aeroparque Int. Jorge Newbery</a></p> <br>
     <p><a href="">¿Ya tengo Cuenta? </a></p>
     <p><a href="">Registrarse </a></p>
   </section>
  <br> <br> <br> <br> <br>
-<footer>
-  <div class="containerFooter-reserva">
-        <div> &copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</div>
-      <ul class="iconos-footer">
-        <a href="https://www.instagram.com/" target="_blank">   
-        <li class="instagram"> <img src="views/instagram.png" alt="Instagram" data-input style="margin-right: 5px;">  </li></a>
-        <a href="https://www.facebook.com" target="_blank">
-        <li class="facebook"> <img src="views/facebook.png" alt="Facebook" data-input style="margin-right: 5px;"></li></a>
-        <a href="https://web.whatsapp.com/" target="_blank">
-        <li class="facebook"> <img src="views/whatsapp.png" alt="whatsapp" data-input style="margin-right: 5px;"></li></a>
-        <a href="https://www.youtube.com/" target="_blank">
-        <li class="facebook"> <img src="views/youtube.png" alt="youtube" data-input style="margin-right: 5px;"></li></a>
-      </ul>
-  </div>
 
-</footer>
+ </main>
+ <footer>
+        <div class="containerFooter">
+            <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
+        </div>
+    </footer>
