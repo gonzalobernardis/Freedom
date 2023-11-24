@@ -62,17 +62,14 @@
 
   <div id='calendar' class="div-form-reserva">
     
-    <a href="Views/reservadatos.php" class="">¿Vuelos desde Bs As A donde Quieres Ir?  </a>
+    <a href="Views/reservadatos.php" class="" >¿Vuelos desde Bs As A donde Quieres Ir?  </a>
   </div>
 
 
 
   <div>
     <img src="views/views/aerolineas.png" alt="">
-  </div>
 
-  <div>
-    <img class="img-hoteles" src="views/views/hoteles.png" alt="">
   </div>
 </main>
 

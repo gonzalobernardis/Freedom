@@ -27,6 +27,7 @@
             </nav>
         </div>
     </header>
+    <main>
 <form action="vuelos.php">
 <section class="form-register">
     <h4>Seleccione su Vuelo</h4>
@@ -60,25 +61,15 @@
       <button class="botons">RESERVAR</button> 
     </form> 
     <br>
-    <p>Tu vuelo de ida sale de<a href="https://maps.app.goo.gl/KRuV19EjMSAtuAp86" class="direccion">Aeroparque Internacional Jorge Newbery</a></p> <br>
-
+    <p>Tu vuelo de ida sale de <a href="https://maps.app.goo.gl/KRuV19EjMSAtuAp86" class="direccion">Aeroparque Int. Jorge Newbery</a></p> <br>
     <p><a href="">¿Ya tengo Cuenta? </a></p>
     <p><a href="">Registrarse </a></p>
   </section>
  <br> <br> <br> <br> <br>
-<footer>
-  <div class="containerFooter-reserva">
-        <div> &copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</div>
-      <ul class="iconos-footer">
-        <a href="https://www.instagram.com/" target="_blank">   
-        <li class="instagram"> <img src="views/instagram.png" alt="Instagram" data-input style="margin-right: 5px;">  </li></a>
-        <a href="https://www.facebook.com" target="_blank">
-        <li class="facebook"> <img src="views/facebook.png" alt="Facebook" data-input style="margin-right: 5px;"></li></a>
-        <a href="https://web.whatsapp.com/" target="_blank">
-        <li class="facebook"> <img src="views/whatsapp.png" alt="whatsapp" data-input style="margin-right: 5px;"></li></a>
-        <a href="https://www.youtube.com/" target="_blank">
-        <li class="facebook"> <img src="views/youtube.png" alt="youtube" data-input style="margin-right: 5px;"></li></a>
-      </ul>
-  </div>
 
-</footer>
+ </main>
+ <footer>
+        <div class="containerFooter">
+            <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
+        </div>
+    </footer>

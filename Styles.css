@@ -122,6 +122,9 @@ main {
         width: 100%;
     }
 }
+
+
+
 .maincomment{
     padding-top: 5em;
     height: 35em;
@@ -617,3 +620,18 @@ padding-bottom: 50em;
 .botonreg{
   margin-top: 1em
 }
+
+.coment {
+
+    background-color: #d1e751c5;
+
+}
+.main-reserva{
+  background-color: #d1e751c5;
+}
+
+
+
+
+
+

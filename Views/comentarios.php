@@ -35,20 +35,37 @@
         </form>
 
 
-        <h1>Comentarios</h1>
-        <div id="comentarios">
-            <?php
-            foreach ($comentarios as $comentario) {
-                echo "<p>{$comentario['nombre']}: {$comentario['comentario']}</p>";
-            }
-            ?>
-        </div>
+
     </div>
+    </main>
+<div class="maincomment coment">
+    <h1 >Comentarios</h1>
+<?php
+    $conexion = mysqli_connect("127.0.0.1", "root", "", "serviciodevuelos") or
+        die("Problemas con la conexión");
 
+        if (isset($_REQUEST["comentario"])){
+    mysqli_query($conexion, "insert into comentarios(nombre, comentario) values 
+                       ('$_REQUEST[nombre]','$_REQUEST[comentario]')")
+        or die("Problemas en el select" . mysqli_error($conexion));
+        }
+        $registros = mysqli_query($conexion, "select * from comentarios ") or
+       die("Problemas en el select:" . mysqli_error($conexion));
+    
+    
+    
+      while ($reg = mysqli_fetch_array($registros)) {
+        echo "nombre:" . $reg['nombre'] . "<br>";
+        echo "comentario:" . $reg['comentario'] . "<br>";
+        echo "<br>";
+      }
 
+    mysqli_close($conexion);
 
+    ?>
 
-</main>
+</div>
+
 <footer>
         <div class="containerFooter">
             <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>

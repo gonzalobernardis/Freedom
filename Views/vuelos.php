@@ -30,37 +30,7 @@
             </nav>
         </div>
     </header>
-
-
-    <?php
-    $conexion = mysqli_connect("127.0.0.1", "root", "", "serviciodevuelos") or
-        die("Problemas con la conexión");
-
-    if (isset($_REQUEST["aerolinea"])) {
-        mysqli_query($conexion, "insert into reserva(destino,ida,vuelta,aerolinea,cantpasajeros,dias) values 
-                            ('$_REQUEST[destino]','$_REQUEST[ida]','$_REQUEST[vuelta]','$_REQUEST[aerolinea]','$_REQUEST[cantpasajeros]','$_REQUEST[dias]')")
-            or die("Problemas en el select" . mysqli_error($conexion));
-    }
-
-    $registros = mysqli_query($conexion, "select * from reserva ") or
-        die("Problemas en el select:" . mysqli_error($conexion));
-
-
-
-    while ($reg = mysqli_fetch_array($registros)) {
-        echo "destino:" . $reg['destino'] . "<br>";
-        echo "ida:" . $reg['ida'] . "<br>";
-        echo "vuelta:" . $reg['vuelta'] . "<br>";
-        echo "aerolinea:" . $reg['aerolinea'] . "<br>";
-        echo "cantpasajeros:" . $reg['cantpasajeros'] . "<br>";
-        echo "dias:" . $reg['dias'] . "<br>";
-        echo "<br>";
-    }
-
-    mysqli_close($conexion);
-
-    ?>
-
+    <main>
 
 
 
@@ -70,12 +40,12 @@
         $conexion = mysqli_connect("127.0.0.1", "root", "", "serviciodevuelos") or
             die("Problemas con la conexión");
 
-        if (isset($_POST["destino"])) {
-
-            mysqli_query($conexion, "insert into reserva(destino,ida,vuelta,aerolinea,cantpasajeros,dias) values 
-                              ('$_REQUEST[destino]','$_REQUEST[ida]','$_REQUEST[vuelta]','$_REQUEST[aerolinea]','$_REQUEST[cantpasajeros]','$_REQUEST[dias]')")
-                or die("Problemas en el select" . mysqli_error($conexion));
-        }
+            if (isset($_REQUEST["aerolinea"])) {
+                mysqli_query($conexion, "insert into reserva(destino,ida,vuelta,aerolinea,cantpasajeros,dias) values 
+                                    ('$_REQUEST[destino]','$_REQUEST[ida]','$_REQUEST[vuelta]','$_REQUEST[aerolinea]','$_REQUEST[cantpasajeros]','$_REQUEST[dias]')")
+                    or die("Problemas en el select" . mysqli_error($conexion));
+            }
+        
 
         if ($conexion->connect_error) {
             die("Error de conexión: " . $conexion->connect_error);
@@ -110,7 +80,7 @@
         ?>
 
     </div>
-
+    </main>
     <footer>
         <div class="containerFooter">
             <p>&copy; <?php echo date("Y"); ?> Freedom. Todos los derechos reservados.</p>
